@@ -1,0 +1,22 @@
+.calc-header{
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px !important;
+    color: black;
+    align-items: baseline;
+    
+}
+
+.calc-header__title{
+    margin: 0%;
+}
+
+.calc-header__theme-title{
+    margin: 0%;
+    margin-right: 5px;
+
+}
+
+.calc-header__theme{
+    display: flex;
+}
