@@ -1,0 +1,14 @@
+.calc-input{
+    padding: 20px;
+    background-color: rgb(8, 21, 42);
+    border: none;
+    border-radius: 10px;
+    caret-color: transparent;
+    direction: rtl;
+    font-size: 25px;
+    width: 100%;
+    color:white;
+    margin: 20px 0;
+    outline: transparent;
+    box-sizing: border-box;
+}
