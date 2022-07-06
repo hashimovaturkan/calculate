@@ -100,7 +100,7 @@ const UserInput = (props) => {
     <input
       disabled="disabled"
       defaultValue={inputValue}
-      className={"calc-input calc-input " + (props.onSend == '.' ? "calc-input__dir-left" : "calc-input__dir-right")}
+      className={"calc-input calc-input " + (props.onSend == '.' ? "calc-input__dir-left " : "calc-input__dir-right ") + (props.onColorChange ? "calc-input__color" : "")}
     />
   );
 };

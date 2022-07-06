@@ -10,7 +10,7 @@ const Buttons = props => {
     }
 
     return(
-        <div className="calc-buttons">
+        <div className={"calc-buttons " + (props.onColorChange ? "calc-buttons__color" : "")}>
             <div className="row">
                 <div className="col-12 col-md-12 col-sm-12 col-xl-6 col-lg-12 p-0">
                     <div className="calc-buttons__wrapper">

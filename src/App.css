@@ -1,5 +1,15 @@
 .calc-wrapper{
-    height: 100vh;
-    background-color: rgb(32, 45, 69);
+    height: 100%;
     padding: 50px 100px;
+    width: 800px;
+    margin: auto;
 }
+
+.calc-wrapper__dark{
+    background-color: rgb(32, 45, 69);
+}
+
+.calc-wrapper__light{
+    background-color: rgb(203 203 203);
+}
+

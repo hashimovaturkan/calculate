@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     font-size: 16px !important;
-    color: black;
+    color: white;
     align-items: baseline;
     
 }
@@ -20,4 +20,8 @@
 
 .calc-header__theme{
     display: flex;
+}
+
+.calc-header__light{
+    color: black;
 }

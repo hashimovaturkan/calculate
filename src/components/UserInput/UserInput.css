@@ -13,6 +13,11 @@
     font-weight: 800;
 }
 
+.calc-input__color{
+    background-color: white;
+    color: black;
+}
+
 .calc-input__dir-right{
     direction: rtl;
 }

@@ -2,3 +2,14 @@
     display: flex;
     
 }
+
+.calc-buttons{
+    padding: 30px;
+    background-color: rgb(8, 21, 42);
+    border-radius: 10px;
+}
+
+.calc-buttons__color{
+    background-color: #9b9b9bab;
+    color: black;
+}
