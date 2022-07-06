@@ -9,6 +9,7 @@
     margin: 12px;
     border-radius: 10px;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .calc-button__dark{

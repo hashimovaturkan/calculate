@@ -4,7 +4,7 @@ const Button = (props) => {
   return (
     <div
       value={props.value}
-      className={"calc-button " + props.className}
+      className={"calc-button " + (props.className ? props.className : "")}
       onClick={props.onClick}
     >
       {props.children}

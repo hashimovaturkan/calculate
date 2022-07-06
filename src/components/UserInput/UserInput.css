@@ -4,7 +4,6 @@
     border: none;
     border-radius: 10px;
     caret-color: transparent;
-    direction: rtl;
     font-size: 35px;
     width: 100%;
     color:white;
@@ -12,4 +11,13 @@
     outline: transparent;
     box-sizing: border-box;
     font-weight: 800;
+}
+
+.calc-input__dir-right{
+    direction: rtl;
+}
+
+.calc-input__dir-left{
+    direction: ltr;
+    text-align: right;
 }

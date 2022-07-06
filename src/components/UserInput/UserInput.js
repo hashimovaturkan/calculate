@@ -21,7 +21,17 @@ const UserInput = (props) => {
       setResult("");
       setOperation("")
     }
-      
+
+    if(props.onSend == "DEL"){
+      if(inputValue != ""){
+        setInputValue( Math.floor(+inputValue/10));
+      }
+    }
+
+    if(props.onSend == "."){
+      setInputValue(inputValue.toString() + ".")
+    }
+
     if(props.onSend == "+" || props.onSend == "-" || props.onSend == "*" || props.onSend == "/" || props.onSend == "="){
 
       if(!result) 
@@ -31,6 +41,9 @@ const UserInput = (props) => {
         {
             case '+' : {
               setResult(prevState => {
+                if(props.onSend == '='){
+                  setInputValue(+prevState + +inputValue);
+                }
               return(
                 +prevState + +inputValue
               )
@@ -39,6 +52,9 @@ const UserInput = (props) => {
 
             case '-' : {
               setResult(prevState => {
+                if(props.onSend == '='){
+                  setInputValue(+result - +inputValue);
+                }
               return(
                 +prevState - +inputValue
               )
@@ -47,6 +63,9 @@ const UserInput = (props) => {
 
             case '/' : {
               setResult(prevState => {
+                if(props.onSend == '='){
+                  setInputValue(+result / +inputValue);
+                }
               return(
                 +prevState / +inputValue
               )
@@ -55,6 +74,9 @@ const UserInput = (props) => {
 
             case '*' : {
               setResult(prevState => {
+                if(props.onSend == '='){
+                  setInputValue(+result * +inputValue);
+                }
               return(
                 +prevState * +inputValue
               )
@@ -66,9 +88,8 @@ const UserInput = (props) => {
       }
 
       setOperation(props.onSend);
-      if(props.onSend == '=')
-        setInputValue(result);
-      else
+
+      if(props.onSend != '=')
         setInputValue("");
       
     }
@@ -79,7 +100,7 @@ const UserInput = (props) => {
     <input
       disabled="disabled"
       defaultValue={inputValue}
-      className="calc-input"
+      className={"calc-input calc-input " + (props.onSend == '.' ? "calc-input__dir-left" : "calc-input__dir-right")}
     />
   );
 };
